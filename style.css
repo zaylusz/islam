@@ -1,0 +1,116 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header styling */
+  header {
+    background: linear-gradient(135deg, #2b6777, #68a691);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  /* General content styling */
+  section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .content {
+    margin-bottom: 40px;
+  }
+  
+  .title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2b6777;
+    padding-bottom: 10px;
+  }
+  
+  /* Image gallery styling */
+  .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .image-gallery img {
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Timeline and pillars grid layout */
+  .timeline, .five-pillars, .religious-book {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .timeline-item, .pillar, .book-info {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .timeline-item:hover, .pillar:hover, .book-info:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image and iframe styling */
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .map {
+    text-align: center;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #2b6777;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
